@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>pics/Party.png</file>
+    <file>pics/SocialMedia.png</file>
+  </qresource>
+</RCC>

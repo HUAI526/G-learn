@@ -1,0 +1,12 @@
+import cv2, numpy
+cv2.namedWindow("polt")
+image = cv2.imread("./media/background.jpg")
+cv2.line(image, (50,50), (500,200), (255,0,0), 2)
+cv2.rectangle(image, (100,200), (180, 300), (0,255,0), 3)
+cv2.rectangle(image, (300,200), (350,260), (0,0,255), -1)
+pts = numpy.array([[300,300], [300,400], [350,320]], numpy.int32)
+cv2.polylines(image, [pts], True, (0,255,255), 2)
+cv2.putText(image,"background.jpg", (20,420), cv2.FONT_HERSHEY_SIMPLEX,1, (255,255,255), 2)
+cv2.imshow("plot", image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()

@@ -1,0 +1,11 @@
+import numpy as np
+na = np.arange(0,6)
+print(na)
+print(na[0])
+print(na[5])
+print(na[1:5])
+print(na[1:5:2])
+print(na[5:1:-1])
+print(na[:])
+print(na[:3])
+print(na[3:])
